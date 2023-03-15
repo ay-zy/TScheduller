@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scheduller</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}" type= "text/css">
+    <link rel="icon"
+    href="https://img.freepik.com/free-icon/calendar-icon-black_318-9776.jpg"
+    type = "image/x-icon">
+</head>
+<body bgcolor=#181818>
+    <nav>
+        <a href="{{url_for('main_page')}}">
+            <img src="https://img.freepik.com/free-icon/calendar-icon-black_318-9776.jpg"
+                 width = "40"
+                 height = "40">
+        </a>
+        <a href="{{url_for('add_task')}}">Добавить</a>
+        <a href="{{url_for('show_tasks_get')}}">Показать</a>
+        <a href="{{url_for('find_tasks_get')}}">Найти</a>
+        <a href="{{url_for('delete_task')}}">Удалить</a>
+    </nav>
+    <hr>
+    <div class="content">
+    {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+</br>
+{% if context %}
+    <div class='message'>
+        <h3>Задание: "{{ context['task'] }}" добавлено на {{ context['date'] }}</h3>
+    </div>
+{% endif %}
+{% for message in get_flashed_messages() %}
+            <div class="alert">{{ message }}</div>
+{% endfor %}
+<form method="post">
+    <input type=text id="task" name=task placeholder=задача required>
+    <input type=date id="date" name=date min="2022-12-31" value={{default_date}}>
+    <input type=submit value=Добавить>
+</form>
+{% endblock %}

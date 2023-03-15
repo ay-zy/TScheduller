@@ -1,0 +1,76 @@
+body {
+    font-family:'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.message {
+    padding: 5px;
+    margin: 0px;
+    border-radius: 5px;
+    background-color: #3e3e3e
+}
+
+nav a {
+    color: white;
+    font-size: 2em;
+    margin-left: 50px;
+    text-decoration: none;
+}
+a:hover {
+    color: #3e3e3e;
+}
+
+.alert {
+      padding: 20px;
+      margin: 5px;
+      color: #970020;
+      background-color: #ffd5de;
+}
+
+input[type=text], input[type=date], select {
+  width: 70%;
+  background-color: #3e3e3e;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #a3a3a3;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 29%;
+  background-color: #3e3e3e;
+  color: white;
+  padding: 13px 20px;
+  margin: 8px 0;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #4e4e4e;
+}
+
+input[name=task] {
+  width: 99%;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  margin-top: 20px;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #4e4e4e;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #3e3e3e;
+}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+</br>
+<form method="post">
+    <input type=text id=part name=part placeholder='Введите слово или фрагмент слова итп.'>
+    <input type=submit value=Найти>
+</form>
+{% if part %}
+    <div class='message'>
+        <h3>Задания содержащие "{{ part }}"</h3>
+    </div>
+{% endif %}
+<table>
+{% for id, task, day in result %}
+<tr>
+    <th>{{id}}</th>
+    <td>{{day}}</td>
+    <th>{{task}}</th>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
+
+

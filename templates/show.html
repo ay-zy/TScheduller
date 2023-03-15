@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+</br>
+
+<form method="post">
+    <input type=date id="date" name=date value={{default_date}} required>
+    <input type=submit value=Показать>
+</form>
+{% if date %}
+    <div class='message'>
+        <h3>Задания от {{ date }}</h3>
+    </div>
+{% endif %}
+<table>
+{% for day,res in result %}
+<tr>
+    <td>{{day}}</td>
+    <th>{{res}}</th>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

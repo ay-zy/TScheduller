@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+</br>
+{% if deleted %}
+    <div class='message'>
+        <h3>Удалено задание: "{{ deleted[1] }}" на {{ deleted[2] }}</h3>
+    </div>
+{% endif %}
+<form method="post">
+    <input type=text id=task_id name=task_id placeholder='Введите id задания'>
+    <input type=submit value=Удалить
+
+{% endblock %}
+
+
