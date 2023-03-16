@@ -6,7 +6,7 @@ from validators import prepare_date as correct_date
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(prog='scheduler',
+    parser = argparse.ArgumentParser(prog='scheduler.py',
                                      formatter_class=argparse.RawTextHelpFormatter,
                                      description=textwrap.dedent("""\
                                                     A program that is designed
